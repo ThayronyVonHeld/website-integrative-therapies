@@ -74,6 +74,7 @@ header{
 }
 
 #home_img_container{
+    
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -87,7 +88,7 @@ header{
 url("https://raw.githubusercontent.com/ThayronyVonHeld/website-integrative-therapies/main/src/assets/images/img-homepage.png");    background-size: cover;
    
     background-size: cover;
-    background-position: center;
+   background-position: center 20%;
     background-repeat: no-repeat;
 }
 
@@ -129,6 +130,12 @@ url("https://raw.githubusercontent.com/ThayronyVonHeld/website-integrative-thera
     font-style: italic;
 
     margin-bottom: 30px;
+
+    background-image:
+    
+url("https://raw.githubusercontent.com/ThayronyVonHeld/website-integrative-therapies/main/src/assets/images/img-homepage.png");    background-size: cover;
+    background-position: center 20%;
+     background-repeat: no-repeat;
 }
 
 #home_img_text4{
@@ -197,8 +204,6 @@ url("https://raw.githubusercontent.com/ThayronyVonHeld/website-integrative-thera
 .card a{
     display: inline-block;
 
-    background: #4f8f63;
-
     color: white;
     text-decoration: none;
 
@@ -207,6 +212,36 @@ url("https://raw.githubusercontent.com/ThayronyVonHeld/website-integrative-thera
     border-radius: 30px;
 
     transition: .3s;
+}
+
+/* PICS */
+
+.card-pics a{
+    background: #4aaf4e;
+}
+
+.card-pics a:hover{
+    background: #4aaf4e;
+}
+
+/* Terapias */
+
+.card-terapias a{
+    background: #e0510f;
+}
+
+.card-terapias a:hover{
+    background: #e0510f;
+}
+
+/* Instituição */
+
+.card-instituicao a{
+    background: rgb(25, 118, 210);
+}
+
+.card-instituicao a:hover{
+    background: rgb(25, 118, 210);
 }
 
 .card a:hover{
@@ -224,9 +259,16 @@ footer{
 
     text-align: center;
 
-    padding: 30px;
+    padding: 20px;
+
+    font-size: 0.95rem;
 }
 
 footer p{
-    margin: 8px 0;
+    margin:0;
+}
+
+footer span{
+    margin: 0 12px;
+    opacity: .7;
 }
