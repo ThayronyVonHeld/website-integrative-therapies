@@ -74,8 +74,7 @@ header{
 }
 
 #home_img_container{
-    height: 550px;
-
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,14 +83,34 @@ header{
     text-align: center;
 
     background-image:
-    linear-gradient(
-        rgba(255,255,255,.75),
-        rgba(255,255,255,.75)
-    ),
-    url("src/assets/images/img-homepage.pnghttps://github.com/ThayronyVonHeld/website-integrative-therapies/blob/main/src/assets/images/img-homepage.png?raw=true");
-
+    
+url("https://raw.githubusercontent.com/ThayronyVonHeld/website-integrative-therapies/main/src/assets/images/img-homepage.png");    background-size: cover;
+   
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+}
+
+#logo_container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logo_container img {
+    width: 70px;
+}
+
+#logo_text h1 {
+    color: #2f6b44;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+#logo_text p {
+    color: #444;
+    font-size: .9rem;
 }
 
 #home_img{
