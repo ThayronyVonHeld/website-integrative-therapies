@@ -1,0 +1,294 @@
+#pics-hero{
+    min-height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background-image:
+    linear-gradient(
+        rgba(255,255,255,.85),
+        rgba(255,255,255,.85)
+    ),
+    url("https://raw.githubusercontent.com/ThayronyVonHeld/website-integrative-therapies/main/src/assets/images/img-homepage.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content{
+    max-width: 900px;
+}
+
+.hero-content h1{
+    font-size: 4rem;
+    color: #1f4731;
+
+    margin-bottom: 20px;
+}
+
+.hero-content h2{
+    font-size: 2rem;
+
+    color: #4b8b5b;
+    font-style: italic;
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+.separator{
+    width: 180px;
+}
+
+/* =========================
+   SEÇÕES GERAIS
+========================= */
+
+.content-section{
+    padding: 80px 20px;
+}
+
+.section-alt{
+    background: #f3f6f2;
+}
+
+.content-grid{
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.reverse{
+    direction: rtl;
+}
+
+.reverse > *{
+    direction: ltr;
+}
+
+.content-text p{
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    color: #555;
+
+    margin-bottom: 20px;
+}
+
+.content-image img{
+    width: 100%;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+/* =========================
+   TITULOS DAS SEÇÕES
+========================= */
+
+.section-title{
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.section-title img{
+    width: 50px;
+}
+
+.section-title h2{
+    font-size: 2rem;
+
+    color: #234634;
+}
+
+/* =========================
+   PRINCÍPIOS
+========================= */
+
+.principles-section{
+    padding: 80px 20px;
+
+    background: white;
+}
+
+.section-heading{
+    text-align: center;
+
+    font-size: 2.8rem;
+
+    color: #234634;
+
+    margin-bottom: 50px;
+}
+
+.principles-grid{
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(5,1fr);
+
+    gap: 20px;
+}
+
+.principle-card{
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #d8d8d8;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+}
+
+.principle-card h3{
+    color: #234634;
+
+    margin-bottom: 15px;
+}
+
+.principle-card p{
+    color: #555;
+
+    line-height: 1.7;
+}
+
+/* =========================
+   BENEFÍCIOS
+========================= */
+
+.benefits-section{
+    padding: 80px 20px;
+
+    background: #f7f7f7;
+}
+
+.benefits-grid{
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(5,1fr);
+
+    gap: 20px;
+}
+
+.benefit-card{
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #d8d8d8;
+
+    text-align: center;
+
+    font-weight: 600;
+
+    color: #234634;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+}
+
+/* =========================
+   PICS NO SUS
+========================= */
+
+.sus-section{
+    padding: 80px 20px;
+}
+
+.btn-primary{
+    display: inline-block;
+
+    margin-top: 20px;
+
+    background: #2f6b44;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 35px;
+
+    border-radius: 30px;
+
+    transition: .3s;
+}
+
+.btn-primary:hover{
+    background: #234634;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media(max-width: 992px){
+
+    .content-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .principles-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .benefits-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .hero-content h1{
+        font-size: 3rem;
+    }
+
+    .hero-content h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 768px){
+
+    .principles-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading{
+        font-size: 2rem;
+    }
+
+    .hero-content h1{
+        font-size: 2.5rem;
+    }
+}
