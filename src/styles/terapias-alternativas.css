@@ -1,0 +1,303 @@
+/* =========================
+   HERO
+========================= */
+
+#therapies-hero{
+    min-height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,.80),
+            rgba(255,255,255,.80)
+        ),
+        url("https://raw.githubusercontent.com/ThayronyVonHeld/website-integrative-therapies/main/src/assets/images/img-homepage.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content{
+    max-width: 900px;
+}
+
+.hero-content h1{
+    font-size: 4rem;
+    color: #1f4731;
+
+    margin-bottom: 20px;
+}
+
+.hero-content h2{
+    font-size: 2rem;
+
+    color: #4b8b5b;
+
+    font-style: italic;
+    font-weight: 600;
+
+    margin-bottom: 30px;
+}
+
+.separator{
+    width: 180px;
+}
+
+/* =========================
+   INTRODUÇÃO
+========================= */
+
+.intro-section{
+    padding: 80px 20px;
+}
+
+.intro-card{
+    max-width: 1200px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    display: grid;
+    grid-template-columns: 120px 1fr;
+
+    gap: 30px;
+
+    align-items: center;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    border: 1px solid #e5e5e5;
+}
+
+.intro-icon img{
+    width: 100px;
+}
+
+.intro-content h2{
+    color: #234634;
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+.intro-content p{
+    color: #555;
+
+    line-height: 1.9;
+
+    margin-bottom: 15px;
+}
+
+/* =========================
+   TÍTULO CENTRAL
+========================= */
+
+.section-title-center{
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section-title-center h2{
+    color: #234634;
+
+    font-size: 2.8rem;
+}
+
+/* =========================
+   CARDS DAS TERAPIAS
+========================= */
+
+.therapies-grid{
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 0 20px 80px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 25px;
+}
+
+.therapy-card{
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid #e5e5e5;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.05);
+
+    transition: .3s;
+}
+
+.therapy-card:hover{
+    transform: translateY(-8px);
+}
+
+.therapy-card img{
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.therapy-content{
+    padding: 25px;
+}
+
+.therapy-content h3{
+    color: #234634;
+
+    font-size: 1.6rem;
+
+    margin-bottom: 15px;
+}
+
+.therapy-content p{
+    color: #555;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+.therapy-content a{
+    text-decoration: none;
+
+    color: #4f8f63;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.therapy-content a:hover{
+    color: #234634;
+}
+
+/* =========================
+   CTA FINAL
+========================= */
+
+.cta-section{
+    padding: 80px 20px;
+}
+
+.cta-content{
+    max-width: 1200px;
+
+    margin: auto;
+
+    background: #f3f6f2;
+
+    border-radius: 20px;
+
+    padding: 60px;
+
+    text-align: center;
+}
+
+.cta-content h2{
+    color: #234634;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+}
+
+.cta-content p{
+    color: #555;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    line-height: 1.9;
+
+    margin-bottom: 30px;
+}
+
+.btn-primary{
+    display: inline-block;
+
+    background: #4f8f63;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 35px;
+
+    border-radius: 30px;
+
+    transition: .3s;
+}
+
+.btn-primary:hover{
+    background: #366449;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media(max-width: 1200px){
+
+    .therapies-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 768px){
+
+    .hero-content h1{
+        font-size: 2.8rem;
+    }
+
+    .hero-content h2{
+        font-size: 1.4rem;
+    }
+
+    .intro-card{
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .therapies-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .section-title-center h2{
+        font-size: 2rem;
+    }
+
+    .cta-content{
+        padding: 40px 25px;
+    }
+
+    .cta-content h2{
+        font-size: 2rem;
+    }
+}
