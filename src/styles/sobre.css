@@ -1,0 +1,328 @@
+/* =========================
+   HERO
+========================= */
+
+#about-hero{
+    min-height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background-image:
+    linear-gradient(
+        rgba(255,255,255,.88),
+        rgba(255,255,255,.88)
+    ),
+    url("https://raw.githubusercontent.com/ThayronyVonHeld/website-integrative-therapies/main/src/assets/images/img-homepage.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content{
+    max-width: 900px;
+}
+
+.hero-content h1{
+    font-size: 4rem;
+    color: #1f4731;
+
+    margin-bottom: 20px;
+}
+
+.hero-content h2{
+    font-size: 2rem;
+
+    color: #4b8b5b;
+    font-style: italic;
+
+    margin-bottom: 25px;
+}
+
+.separator{
+    width: 180px;
+}
+
+
+/* =========================
+   SEÇÕES GERAIS
+========================= */
+
+.content-section{
+    padding: 80px 20px;
+}
+
+.section-alt{
+    background: #f5f8f4;
+}
+
+.content-grid{
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.content-image img{
+    width: 100%;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.content-text p{
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    color: #555;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.section-title{
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.section-title img{
+    width: 50px;
+}
+
+.section-title h2{
+    font-size: 2rem;
+    color: #234634;
+}
+
+.section-heading{
+    text-align: center;
+
+    font-size: 2.8rem;
+
+    color: #234634;
+
+    margin-bottom: 50px;
+}
+
+
+/* =========================
+   MISSÃO
+========================= */
+
+.mission-section{
+    padding: 80px 20px;
+
+    background: #f7f9f6;
+}
+
+.mission-grid{
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 25px;
+}
+
+.mission-card{
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    border: 1px solid #d9e3d8;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+
+    transition: .3s;
+}
+
+.mission-card:hover{
+    transform: translateY(-5px);
+}
+
+.mission-card h3{
+    color: #2f6b44;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 15px;
+}
+
+.mission-card p{
+    color: #555;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   RESULTADOS
+========================= */
+
+.results-section{
+    padding: 80px 20px;
+
+    background: white;
+}
+
+.results-grid{
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 25px;
+}
+
+.result-card{
+    background: #f7f9f6;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border: 1px solid #d9e3d8;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+}
+
+.result-card h3{
+    color: #2f6b44;
+
+    font-size: 1.6rem;
+
+    margin-bottom: 10px;
+}
+
+.result-card p{
+    color: #666;
+}
+
+
+/* =========================
+   PROJETO
+========================= */
+
+.project-section{
+    padding: 80px 20px;
+
+    background: #eef5ee;
+}
+
+.project-box{
+    max-width: 1000px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    border: 1px solid #d9e3d8;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.05);
+}
+
+.project-box h2{
+    color: #234634;
+
+    font-size: 2rem;
+
+    margin-bottom: 25px;
+}
+
+.project-box p{
+    color: #555;
+
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media(max-width: 992px){
+
+    .content-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .mission-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .results-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .hero-content h1{
+        font-size: 3rem;
+    }
+
+    .hero-content h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 768px){
+
+    .results-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading{
+        font-size: 2rem;
+    }
+
+    .hero-content h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-content h2{
+        font-size: 1.3rem;
+    }
+
+    .project-box{
+        padding: 30px;
+    }
+}
